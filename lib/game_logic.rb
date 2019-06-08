@@ -8,21 +8,36 @@ class GameLogic
         @board=board
     end
 
+    def board_full?
+      return false if @board.post.any?{|x| x.is_a?(Integer)} 
+
+      true
+    end
+
+    def winner_found
+
+    end
+
     def game_play
-        # positions=[1,2,3,4,5,6,7,8,9]
         puts " welcome to the tic-tac-toe game "
         @board.display
-        puts "enter username for player_one"
-        @player_one=gets.chomp.to_s
-        puts "#{@player_one}, please enter symbol for identifying you on the board"
-        user_id_1=gets.chomp.to_s.upcase
-        puts "enter username for player_two"
-        @player_two=gets.chomp.to_s
-        puts "#{@player_two}, please enter symbol for identifying you on the board"
-        user_id_2=gets.chomp.to_s.upcase
+        puts "enter username for player_one, the first letter of this name will be your player charater"
+        @player_one=gets.chomp.to_s.capitalize
+        user_id_1=@player_one[0].upcase
+        puts "enter username for player_two, the first letter of this name will be your player charater"
+        @player_two=gets.chomp.to_s.capitalize
+        user_id_2=@player_two[0].to_s.upcase
 
-        6.times do | a |
+        a = 0
+        loop do
           @board.display
+
+          if board_full?
+            puts "The board is full"
+            puts "STALEMATE!"
+            return
+           end
+          
           current_player = a.even? ? @player_one : @player_two
           puts "#{current_player}, select an option form 1...9"
           option=gets.chomp.to_i
@@ -30,6 +45,7 @@ class GameLogic
           
           @board.post[option-1] = character if @board.post.include? option
           @@options.push(option)
+          a +=1
         end
       @board.display        
     end
