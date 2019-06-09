@@ -23,12 +23,7 @@ class GameLogic
       true
     end
 
-    def winner_found
-      @@WINS.each do |moves|
-        puts "#{current_player} wins!" if Set.new(moves).length == 1;
-      end
-    end
-
+  
     def game_play
         puts " welcome to the tic-tac-toe game "
         @board.display
@@ -56,6 +51,7 @@ class GameLogic
             
             moves[moves.find_index(option)] = character if moves.include? option
             if Set.new(moves).length == 1
+              puts "GAME OVER!"
               puts "#{current_player} Wins!"
               @board.display
               return
