@@ -12,8 +12,10 @@ class GameLogic
     end
 
     def valid_move? ( input )
-        return "out of range" if input > 9 || input < 0
-        return "number was already selected " if @@options.include?( input )
+        unless input.is_a?(Integer) && (input < 9 || input > 0) && !@@options.include?(input)
+          puts "Invalid Input"
+          return false
+        end
         true
     end
 
@@ -35,15 +37,21 @@ class GameLogic
         user_id_2=@player_two[0].to_s.upcase
 
         a = 0
-        until board_full?
+        until board_full?()
           @board.display
-          
+          option = 0
           current_player = a.even? ? @player_one : @player_two
-          puts "#{current_player}, select an option form 1...9"
-          option=gets.chomp.to_i 
+          
+          
+          
+          loop do
+            puts "#{current_player}, select an option form 1...9"
+            option = gets.chomp.to_i
+            break if valid_move? option
+          end
+
           character = (a.even? ? user_id_1 : user_id_2).to_s
           
-
           
           @board.post[option-1] = character if @board.post.include? option
 
