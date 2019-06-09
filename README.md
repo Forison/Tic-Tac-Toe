@@ -1,6 +1,6 @@
 # **Classic Tic-Tac-Toe Game.**
 
-This a recreation of the classic Tic-Tac-Toe using Ruby. The project is meant to reinforce Object Oriented Programing (OOP) concepts. You can read more about the game [HERE.](https://en.wikipedia.org/wiki/Tic-tac-toe){:target="_blank"}
+This a recreation of the classic Tic-Tac-Toe using Ruby. The project is meant to reinforce Object Oriented Programing (OOP) concepts. You can learn more about the game <a href="https://en.wikipedia.org/wiki/Tic-tac-toe" target="_blank">**HERE.**</a>
 
 ## **How to play our game**
 
