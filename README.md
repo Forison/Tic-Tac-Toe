@@ -17,6 +17,5 @@ The game starts by taking in the names of 2 players and uses the first letter of
 
 ### Contributors
 
-[Boakye Addo](https://github.com/Forison)
-
-[Xarri Jorge](https://github.com/xarrijorge)
+* [Boakye Addo](https://github.com/Forison)
+* [Xarri Jorge](https://github.com/xarrijorge)
