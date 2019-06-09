@@ -8,7 +8,7 @@ Our game is a command line game so you need to be in a terminal, or terminal lik
 
 The game starts by taking in the names of 2 players and uses the first letter of their names as their player marker on the board. The board is a 3 X 3 grid and each player takes turn placing markers on the board, starting with the first player. The game ends if any player has a straight set of 3 characters horizontal, vertical or diagonal or if the board is full.
 
-![tic-tac-toe](./assets/tic-tac-toe-image.jpeg)
+![tic-tac-toe](./assets/tic-tac-toe-image.png =300x300)
 
 ### Rules of the game
 
