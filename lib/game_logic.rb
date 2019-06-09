@@ -24,7 +24,7 @@ class GameLogic
     end
 
     def winner_found
-      @wins.each do |moves|
+      @@WINS.each do |moves|
         puts "#{current_player} wins!" if Set.new(moves).length == 1;
       end
     end
@@ -49,16 +49,22 @@ class GameLogic
           character = (a.even? ? user_id_1 : user_id_2).to_s
           
 
-          @@WINS = @@WINS.each do |moves|
-            if moves.include? option
-              moves[option] = character
-            end
-          end
+          
           @board.post[option-1] = character if @board.post.include? option
+
+          @@WINS = @@WINS.each do |moves|
+            
+            moves[moves.find_index(option)] = character if moves.include? option
+            if Set.new(moves).length == 1
+              puts "#{current_player} Wins!"
+              @board.display
+              return
+            end
+
+          end
           
           @@options.push(option)
           a +=1
-          puts @@WINS
         end
       @board.display  
       puts "board full!"
