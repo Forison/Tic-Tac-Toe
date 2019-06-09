@@ -1,6 +1,6 @@
 # **Classic Tic-Tac-Toe Game.**
 
-This a recreation of the classic Tic-Tac-Toe using Ruby. The project is meant to reinforce Object Oriented Programing (OOP) concepts. You can learn more about the game <a href="https://en.wikipedia.org/wiki/Tic-tac-toe" target="_blank">**HERE.**</a>
+This a recreation of the classic Tic-Tac-Toe using Ruby. The project is meant to reinforce Object Oriented Programing (OOP) concepts. You can learn more about the game <a href="https://en.wikipedia.org/wiki/Tic-tac-toe" target="blank">**HERE.**</a>
 
 ## **How to play our game**
 
@@ -19,5 +19,5 @@ The game starts by taking in the names of 2 players and uses the first letter of
 
 ## **Contributors**
 
-*  <a href="https://github.com/forison" target="_blank">Boakye Addo</a>
-* <a href="https://github.com/xarrijorge" target="_blank">Xarri Jorge</a>
+*  <a href="https://github.com/forison" target="blank">Boakye Addo</a>
+* <a href="https://github.com/xarrijorge" target="blank">Xarri Jorge</a>
