@@ -16,7 +16,19 @@ In order to run the game, you'll need to have ruby installed locally. Check [HER
 
 You will then have to Clone or download this repo. You can use `git clone https://github.com/Forison/tic-tac-toe.git` on the terminal if you have git installed or just download it from github.
 
-Next, navigate the directory `cd tic-tac-toe`.
+Next, navigate the directory `cd tic-tac-toe`. The directory has the following structure:
+* An assets folder that holders the images used in the README file.
+* A bin folder that holds the `main.rb` file.
+* A lib folder that holds `modules` and `classes` : `board.rb`, `game_logic.rb` ad `player.rb`
+* A LICENSE.md and a README.md file.
+
+To run the game, first verify that you have ruby installed by running `ruby -v` or `ruby --version` you should see something like `ruby 2.6.0p0 (2018-12-25 revision 66547) [x86_64-linux]`, based on your version and OS.
+
+Next run `ruby bin/main.rb` or `cd bin; ruby main.rb`. This command tell ruby to run our `main.rb` file. You should be greated with the game interface.
+
+<img alt="Game start screen showing the board" href="./assets/start_game.png">
+
+## **ENJOY!**
 
 ## **Rules of the game**
 
