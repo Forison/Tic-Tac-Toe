@@ -34,7 +34,7 @@ To run the game, first verify that you have ruby installed by running `ruby -v` 
 
 Next run `ruby bin/main.rb` or `cd bin; ruby main.rb`. This command tell ruby to run our `main.rb` file. You should be greated with the game interface.
 
-<img alt="Game start screen showing the board" href="./assets/start_game.png">
+<img alt="Game start screen showing the board" src="./assets/start_game.png" width="auto">
 
 ## **ENJOY!**
 
