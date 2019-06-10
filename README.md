@@ -10,6 +10,14 @@ The game starts by taking in the names of 2 players and uses the first letter of
 
 <img alt="Tic-Tac-Toe" src="./assets/tic-tac-toe-image.png" width="300" height="300" style="margin: 10px auto;">
 
+
+## **Rules of the game**
+
+* A player can't play more than once during a turn.
+* A player can't play in an already taken space.
+* Once a winning sequence is reached, the game is over regardless of how many turns have passed
+* Once the board is full, game is over.
+
 ## **Running the game**
 
 In order to run the game, you'll need to have ruby installed locally. Check [HERE](https://www.ruby-lang.org/en/documentation/installation/) to learn how to install ruby. 
@@ -29,13 +37,6 @@ Next run `ruby bin/main.rb` or `cd bin; ruby main.rb`. This command tell ruby to
 <img alt="Game start screen showing the board" href="./assets/start_game.png">
 
 ## **ENJOY!**
-
-## **Rules of the game**
-
-* A player can't play more than once during a turn.
-* A player can't play in an already taken space.
-* Once a winning sequence is reached, the game is over regardless of how many turns have passed
-* Once the board is full, game is over.
 
 ## **Contributors**
 

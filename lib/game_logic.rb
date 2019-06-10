@@ -29,10 +29,10 @@ class GameLogic
     def game_play
         puts " welcome to the tic-tac-toe game "
         @board.display
-        puts "enter username for player_one, the first letter of this name will be your player charater"
+        puts "enter username for player_one, the first letter of this name will be your player character"
         @player_one=gets.chomp.to_s.capitalize
         user_id_1=@player_one[0].upcase
-        puts "enter username for player_two, the first letter of this name will be your player charater"
+        puts "enter username for player_two, the first letter of this name will be your player character"
         @player_two=gets.chomp.to_s.capitalize
         user_id_2=@player_two[0].to_s.upcase
 
