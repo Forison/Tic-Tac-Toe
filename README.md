@@ -10,6 +10,14 @@ The game starts by taking in the names of 2 players and uses the first letter of
 
 <img alt="Tic-Tac-Toe" src="./assets/tic-tac-toe-image.png" width="300" height="300" style="margin: 10px auto;">
 
+## **Running the game**
+
+In order to run the game, you'll need to have ruby installed locally. Check [HERE](https://www.ruby-lang.org/en/documentation/installation/) to learn how to install ruby. 
+
+You will then have to Clone or download this repo. You can use `git clone https://github.com/Forison/tic-tac-toe.git` on the terminal if you have git installed or just download it from github.
+
+Next, navigate the directory `cd tic-tac-toe`.
+
 ## **Rules of the game**
 
 * A player can't play more than once during a turn.
